@@ -91,10 +91,11 @@ export const Container = styled.div`
 
 export const CardsWrapper = styled.div`
   position: relative;
+  padding: 200px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  gap: 100px 0;
   justify-content: center;
 `;
 
