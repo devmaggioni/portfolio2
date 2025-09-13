@@ -4,6 +4,7 @@ import type { ThemeColors } from "../types/ThemeColors";
 export const GlobalStyle = createGlobalStyle<{
   theme: ThemeColors;
 }>`
+
   *, *::before, *::after {
     margin: 0;
     padding: 0;

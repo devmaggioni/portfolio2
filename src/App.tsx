@@ -6,6 +6,7 @@ import { GlobalStyle } from "./styles/GlobalStyle";
 
 // pages
 import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 // components
 import Header from "./components/Header";
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <Cursor />
         <HomePage />
+        <ProjectsPage />
         {/*        <button
           className="mouse-effect"
           style={{

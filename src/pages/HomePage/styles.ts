@@ -30,34 +30,33 @@ export const Container = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  @media screen and (max-width: 650px) {
-    left: -70px;
-  }
   position: absolute;
-  top: 25%;
-  left: 100px;
+  top: 15%;
+  left: 20px;
 
   h1 {
-    @media screen and (max-width: 650px) {
-      top: 15%;
-      font-size: 40px;
-      line-height: 40px;
+    @media screen and (max-width: 850px) {
+      max-width: 90vw;
+      white-space: pre-wrap;
+      left: 0px;
     }
-    max-width: 700px;
+    position: absolute;
+    max-width: 1500px;
+    white-space: nowrap;
     text-transform: uppercase;
-    line-height: 70px;
+    line-height: clamp(50px, 6vw, 100px);
     gap: 8px;
     font-family: "Mona Sans", serif;
-    font-size: 80px;
-    position: absolute;
+    font-size: clamp(60px, 6vw, 150px);
     top: 100px;
     left: 100px;
     font-weight: 900;
     color: white;
     .animated-text {
-      all: inherit;
-      min-width: 100px;
-      min-height: 100px;
+      @media screen and (max-width: 850px) {
+        font-size: clamp(40px, 6vw, 150px);
+      }
+      white-space: pre-wrap;
       color: #6573fe;
     }
   }

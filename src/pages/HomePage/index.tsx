@@ -1,7 +1,7 @@
-import DotGrid from "../components/ReactBits/Backgrounds/DotGrid/DotGrid";
-import SplashCursor from "../components/ReactBits/Animations/SplashCursor";
+import DotGrid from "../../components/ReactBits/Backgrounds/DotGrid/DotGrid";
+import SplashCursor from "../../components/ReactBits/Animations/SplashCursor";
 // import TextType from "../components/ReactBits/Texts/TextType";
-import RotatingText from "../components/ReactBits/Texts/RotatingText";
+import RotatingText from "../../components/ReactBits/Texts/RotatingText";
 import { Container, TextWrapper } from "./styles";
 
 export default function HomePage() {

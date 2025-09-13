@@ -21,6 +21,7 @@ export default function Cursor() {
   const effectBig = hoveredClass?.includes("effect-big");
   const effectBig2 = hoveredClass?.includes("effect-big2");
   const smallEffect = hoveredClass?.includes("effect-small");
+  const hideEffect = hoveredClass?.includes("effect-hide");
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -52,6 +53,7 @@ export default function Cursor() {
       <motion.div
         className="hide-in-mobile"
         style={{
+          opacity: (hideEffect && "0") || "1",
           position: "fixed",
           top: -30,
           left: -30,
