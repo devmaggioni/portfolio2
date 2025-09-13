@@ -9,7 +9,7 @@ export default function HomePage() {
     <Container>
       <SplashCursor />
       <DotGrid
-        className="background"
+        className="hide-in-mobile background"
         dotSize={5}
         gap={15}
         baseColor="#fd18ea"
