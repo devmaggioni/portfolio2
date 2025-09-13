@@ -91,7 +91,7 @@ export const Container = styled.div`
 
 export const CardsWrapper = styled.div`
   position: relative;
-  padding: 200px 0;
+  padding: 100px 0;
   width: 100%;
   display: flex;
   flex-direction: column;

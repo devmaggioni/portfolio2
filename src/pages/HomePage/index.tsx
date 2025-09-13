@@ -3,23 +3,29 @@ import SplashCursor from "../../components/ReactBits/Animations/SplashCursor";
 // import TextType from "../components/ReactBits/Texts/TextType";
 import RotatingText from "../../components/ReactBits/Texts/RotatingText";
 import { Container, TextWrapper } from "./styles";
+import { useAppContext } from "../../contexts/AppContext";
 
 export default function HomePage() {
+  const { currentWidth } = useAppContext();
   return (
     <Container>
-      <SplashCursor />
-      <DotGrid
-        className="hide-in-mobile background"
-        dotSize={5}
-        gap={15}
-        baseColor="#fd18ea"
-        activeColor="#aa0ef3"
-        proximity={50}
-        shockRadius={250}
-        shockStrength={3}
-        resistance={45}
-        returnDuration={0.3}
-      />
+      {currentWidth >= 750 && (
+        <>
+          <SplashCursor />
+          <DotGrid
+            className="hide-in-mobile background"
+            dotSize={5}
+            gap={15}
+            baseColor="#fd18ea"
+            activeColor="#aa0ef3"
+            proximity={50}
+            shockRadius={250}
+            shockStrength={3}
+            resistance={45}
+            returnDuration={0.3}
+          />
+        </>
+      )}
       {/*    <TextType
         className="text"
         text={[
