@@ -104,10 +104,13 @@ export const Card = styled.div`
     height: 60dvh;
   }
   position: relative;
-  background-color: red;
+  background-image: url(https://picsum.photos/500/300);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 70%;
   max-width: 1100px;
-  height: 700px;
+  height: clamp(100px, 85dvh, 750px);
 
   .text-wrapper {
     @media screen and (max-width: 750px) {
@@ -126,6 +129,7 @@ export const Card = styled.div`
     all: unset;
     position: absolute;
     color: white;
+    white-space: nowrap;
     font-weight: 900;
     font-size: 100px;
     letter-spacing: 8px;
