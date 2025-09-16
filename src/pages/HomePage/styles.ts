@@ -18,6 +18,20 @@ export const Container = styled.div`
     );
   }
 
+  .anime-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* força ocupar a tela toda */
+    overflow: hidden;
+  }
+
+  canvas {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover; /* garante que não estique */
+  }
+
   .background {
     position: absolute;
     width: 100dvw;
